@@ -43,3 +43,5 @@ let isChecked = false,
     isClose = false;
 
 console.log(isChecked || !isClose);
+console.log("incr: ",typeof(incr));
+console.log("arr: ",typeof(arr));
