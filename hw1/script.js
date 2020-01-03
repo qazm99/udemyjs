@@ -1,7 +1,7 @@
 'use strict';
 
-let budget = prompt("Ваш бюджет на месяц?", 1000000);
-let timeData = prompt("!!!Введите дату в формате YYYY-MM-DD", '2020-01-01');
+let money = prompt("Ваш бюджет на месяц?", 1000000);
+let time = prompt("!!!Введите дату в формате YYYY-MM-DD", '2020-01-01');
 
 let appData = {
     budget,
@@ -18,8 +18,8 @@ let appData = {
     income: []
 }
 
-appData.budget = budget;
-appData.timeData = timeData;
+appData.budget = money;
+appData.timeData = time;
 appData.expenses[prompt("Введите статью расходов")] = prompt("Сумма на эти расходы");
 appData.expenses[prompt("Введите статью расходов")] = prompt("Сумма на эти расходы");
 alert("Ваш бюджет на день: "+appData.budget/30+" рублей.");
